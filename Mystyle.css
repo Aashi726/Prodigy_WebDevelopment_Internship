@@ -1,0 +1,53 @@
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #617b96;
+      color: rgb(0, 0, 0);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-around;
+      transition: background-color 0.3s ease;
+      z-index: 1000;
+    }
+
+    .navbar.scrolled {
+      background-color: #16ef41;
+    }
+
+    .navbar a {
+      color: rgb(255, 255, 255);
+      text-decoration:none;
+      padding: 8px 12px;
+      transition: color 0.1s ease, background-color 0.1s ease;
+    }
+
+    .navbar a:hover {
+      background-color: white;
+      color: #0d0d0d;
+      border-radius: 20px;
+    }
+
+    .content {
+      margin-top: 80px;
+      padding: 20px;
+    }
+
+    .section {
+      height: 100vh;
+      padding: 40px;
+    }
+
+    .section:nth-child(even) {
+      background-color: #f0f0f0;
+    }
+
+    .section:nth-child(odd) {
+      background-color: #ffffff;
+    }
